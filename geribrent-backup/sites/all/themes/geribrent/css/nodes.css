@@ -1,0 +1,109 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/* line 13, ../sass/nodes.scss */
+#user-login,
+.node-2,
+.node-3 {
+  background: white;
+  padding: 1.5em;
+  border-radius: 25px;
+  background: #dae1e6;
+}
+
+/* line 20, ../sass/nodes.scss */
+.node {
+  /* Node wrapper */
+}
+/* line 22, ../sass/nodes.scss */
+.preview .node {
+  /* Preview of the content before submitting new or updated content */
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
+}
+/* line 26, ../sass/nodes.scss */
+.node .node-title {
+  /* Node title */
+}
+/* line 29, ../sass/nodes.scss */
+.node .user-picture {
+  /* The picture of the node author */
+}
+/* line 32, ../sass/nodes.scss */
+.node .submitted {
+  /* The "posted by" information */
+}
+/* line 35, ../sass/nodes.scss */
+.node .content {
+  /* Node's content wrapper */
+}
+/* line 38, ../sass/nodes.scss */
+.node .service-image {
+  width: 30%;
+  float: right;
+  padding-top: 30px;
+  margin-right: 3em;
+}
+/* line 45, ../sass/nodes.scss */
+.node ul.links {
+  /* Node links. See also the ul.links declaration in the pages.css. */
+}
+
+/* line 50, ../sass/nodes.scss */
+.node-promoted {
+  /* A node that has been promoted to the front page */
+}
+
+/* line 53, ../sass/nodes.scss */
+.node-sticky {
+  /* A sticky node (displayed before others in a list) */
+}
+
+/* line 56, ../sass/nodes.scss */
+.node-by-viewer {
+  /* A node created by the current user */
+}
+
+/* line 59, ../sass/nodes.scss */
+.node-teaser {
+  /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* line 68, ../sass/nodes.scss */
+.node-page {
+  /* Page content node */
+}
+
+/* line 71, ../sass/nodes.scss */
+.node-article {
+  /* Article content node */
+}
+
+/* line 74, ../sass/nodes.scss */
+.node-unpublished {
+  /* Unpublished nodes */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 77, ../sass/nodes.scss */
+.node-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}

@@ -1,0 +1,431 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+/*
+ * Body
+ */
+/* line 19, ../sass/pages.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #003445;
+}
+
+/* line 25, ../sass/pages.scss */
+#page {
+  max-width: 1024px;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+/* line 34, ../sass/pages.scss */
+#skip-link {
+  margin: 0;
+}
+/* line 38, ../sass/pages.scss */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+/* line 52, ../sass/pages.scss */
+#header {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #C9C9C9;
+  border-radius: 25px;
+}
+
+/* line 59, ../sass/pages.scss */
+#logo {
+  /* Wrapping link for logo */
+  float: left;
+  /* LTR */
+  margin: 0;
+  padding: 0;
+}
+/* line 64, ../sass/pages.scss */
+#logo img {
+  vertical-align: bottom;
+  width: 400px;
+  margin-left: 10px;
+}
+
+/* line 71, ../sass/pages.scss */
+#name-and-slogan {
+  /* Wrapper for website name and slogan */
+  float: left;
+}
+
+/* line 75, ../sass/pages.scss */
+#site-name {
+  /* The name of the website */
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+/* line 81, ../sass/pages.scss */
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+/* line 87, ../sass/pages.scss */
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+/* line 92, ../sass/pages.scss */
+#site-slogan {
+  /* The slogan (or tagline) of a website */
+  margin: 0;
+  font-size: 1em;
+}
+
+/* line 97, ../sass/pages.scss */
+.region-header {
+  /* Wrapper for any blocks placed in the header region */
+  clear: both;
+  /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+/**
+ * Navigation
+ */
+/* line 111, ../sass/pages.scss */
+#navigation {
+  background: #6dbaed;
+  border-radius: 25px;
+}
+/* line 114, ../sass/pages.scss */
+#navigation a {
+  display: block;
+  text-decoration: none;
+  color: #003445;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+/* line 122, ../sass/pages.scss */
+#navigation a:hover {
+  color: #1075bd;
+}
+/* line 125, ../sass/pages.scss */
+#navigation a.active {
+  color: #1075bd;
+}
+/* line 128, ../sass/pages.scss */
+#navigation li {
+  padding: 0 !important;
+}
+
+/* line 133, ../sass/pages.scss */
+.sf-menu.sf-style-default li, .sf-menu.sf-style-default.sf-navbar {
+  background: none;
+  margin-left: 15px;
+}
+
+/* line 138, ../sass/pages.scss */
+.sf-menu.sf-style-default a {
+  border: none;
+  height: 19px;
+}
+
+/* line 143, ../sass/pages.scss */
+.active-trail {
+  background: #bdd2ff !important;
+}
+
+/*
+ * Content
+ */
+/* line 150, ../sass/pages.scss */
+#content {
+  margin-top: 1.5em;
+}
+
+/* line 157, ../sass/pages.scss */
+.breadcrumb {
+  /* The path to the current page in the form of a list of links */
+}
+/* line 158, ../sass/pages.scss */
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 162, ../sass/pages.scss */
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 175, ../sass/pages.scss */
+h1.title,
+h2.node-title,
+h2.block-title,
+h2.title,
+h2.comment-form,
+h3.title {
+  /* Comment title */
+  margin: 0;
+}
+
+/* line 179, ../sass/pages.scss */
+h1.title {
+  display: none;
+}
+
+/* line 182, ../sass/pages.scss */
+tr.even {
+  /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 186, ../sass/pages.scss */
+tr.odd {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 190, ../sass/pages.scss */
+div.messages {
+  /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 1.5em 0;
+  /* Drupal core uses "6px 0" margin */
+}
+/* line 193, ../sass/pages.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 199, ../sass/pages.scss */
+div.status {
+  /* Normal priority messages */
+}
+
+/* line 203, ../sass/pages.scss */
+div.warning,
+tr.warning {
+  /* Medium priority messages */
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */
+}
+
+/* line 208, ../sass/pages.scss */
+div.error,
+tr.error {
+  /* High priority messages. See also the .error declaration below. */
+}
+
+/* line 211, ../sass/pages.scss */
+.error {
+  /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */
+}
+
+/* line 215, ../sass/pages.scss */
+.warning {
+  /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */
+}
+
+/* line 219, ../sass/pages.scss */
+.tabs {
+  /* See also the tabs.css file. */
+}
+
+/* line 222, ../sass/pages.scss */
+.region-help {
+  /* Help text on a page */
+}
+
+/* line 225, ../sass/pages.scss */
+.more-help-link {
+  /* Link to more help */
+}
+
+/* line 228, ../sass/pages.scss */
+.region-content {
+  /* Wrapper for the actual page content */
+}
+
+/* line 231, ../sass/pages.scss */
+ul.inline {
+  /* List of links generated by theme_links() */
+  display: inline;
+  padding: 0;
+}
+/* line 235, ../sass/pages.scss */
+ul.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0;
+  /* LTR */
+}
+
+/* line 241, ../sass/pages.scss */
+span.field-label {
+  /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0;
+  /* LTR */
+}
+
+/* line 245, ../sass/pages.scss */
+.item-list .pager {
+  /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+}
+/* line 248, ../sass/pages.scss */
+.item-list .pager li {
+  /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+/* line 253, ../sass/pages.scss */
+.feed-icon {
+  /* The link to the RSS or Atom feed for the current list of content */
+}
+
+/* line 256, ../sass/pages.scss */
+.more-link {
+  /* Aggregator, blog, and forum more link */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+/*
+ * Footer
+ */
+/* line 283, ../sass/pages.scss */
+#footer {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  height: 40px;
+  border-radius: 25px;
+  background: #6dbaed;
+  padding: 0.5em;
+}
+
+/*
+ * Page bottom
+ */
+/* line 296, ../sass/pages.scss */
+.region-bottom {
+  /* Wrapper for any blocks placed in the page bottom region */
+}
+
+/* line 299, ../sass/pages.scss */
+.ui-icon {
+  display: none;
+}
+
+/* line 304, ../sass/pages.scss */
+#accordion h3 {
+  text-align: center;
+  background: #1075bd;
+  color: white;
+}
+
+/* line 311, ../sass/pages.scss */
+#map {
+  float: left;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/* line 317, ../sass/pages.scss */
+#contact {
+  height: 450px;
+  border: 2px solid #1075bd;
+  border-radius: 25px;
+  background: #dae1e6;
+}
+
+/* line 324, ../sass/pages.scss */
+.webform-client-form {
+  border: 2px solid #1075bd;
+  border-radius: 25px;
+  margin-top: 2em;
+  padding: 2em 2em 2em 2em;
+  background: #F7FCFF;
+}
+
+/* line 333, ../sass/pages.scss */
+input,
+textarea {
+  background: #dae1e6;
+  border: 1px solid #ccc;
+  padding: 3px;
+  font-size: 14px;
+}
+
+/* line 340, ../sass/pages.scss */
+.ui-accordion-content {
+  background: #dae1e6;
+}
+
+/* line 344, ../sass/pages.scss */
+#footer .easy_social_box {
+  float: right;
+  margin-top: 3px;
+  margin-right: 1em;
+}
+
+/* line 350, ../sass/pages.scss */
+#header .easy_social_box {
+  float: right;
+  margin-top: -35px;
+  margin-right: 1em;
+}
+
+/* line 357, ../sass/pages.scss */
+.easy_social-widget-googleplus {
+  width: 33px;
+}
+
+/* line 361, ../sass/pages.scss */
+.easy_social-widget-facebook {
+  width: 48px;
+}
+
+/* line 365, ../sass/pages.scss */
+#block-search-form {
+  width: 248px;
+  float: right;
+  margin-top: -38px;
+}
